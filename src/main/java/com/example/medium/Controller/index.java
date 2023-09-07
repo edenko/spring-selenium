@@ -20,8 +20,13 @@ public class index {
 
         FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--headless");
+        options.addArguments("--headless");
+        options.addArguments("--window-size=1920,1080");
+        options.addArguments("--start-maximized");
         options.addArguments("--disable-gpu");
-        options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-extensions");
+        options.addArguments("disable-infobars");
         System.setProperty("webdriver.gecko.driver", geckoDriverPath);
         WebDriver driver = new FirefoxDriver(options);
         driver.get("https://medium.com/illumination/sonar-for-soil-how-we-can-use-sound-to-save-our-farms-and-forests-8521ebf86bb8");
