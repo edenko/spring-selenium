@@ -15,8 +15,8 @@ public class index {
 
     @GetMapping("/test/rss/medium")
     public void getDataMedium() {
-//        String geckoDriverPath = "/snap/bin/geckodriver";
-        String geckoDriverPath = "/Users/commoncoding/Downloads/firfox-driver/geckodriver";
+        String geckoDriverPath = "/snap/bin/geckodriver";
+//        String geckoDriverPath = "/Users/commoncoding/Downloads/firfox-driver/geckodriver";
 
         FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--headless");
