@@ -19,7 +19,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	implementation 'org.seleniumhq.selenium:selenium-java:4.12.0'
+	implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
 }
 
 tasks.named('test') {

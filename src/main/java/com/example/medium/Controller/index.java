@@ -19,11 +19,7 @@ public class index {
 //        String geckoDriverPath = "/Users/commoncoding/Downloads/firfox-driver/geckodriver";
 
         FirefoxOptions options = new FirefoxOptions();
-        options.setBinary("/usr/bin/firefox");
         options.addArguments("--headless");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--remote-debugging-port=9222");
         System.setProperty("webdriver.gecko.driver", geckoDriverPath);
         WebDriver driver = new FirefoxDriver(options);
         driver.get("https://medium.com/illumination/sonar-for-soil-how-we-can-use-sound-to-save-our-farms-and-forests-8521ebf86bb8");
