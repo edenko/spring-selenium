@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,6 +21,7 @@ public class index {
 
         FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--headless");
+        options.setLogLevel(FirefoxDriverLogLevel.TRACE);
         System.setProperty("webdriver.gecko.driver", geckoDriverPath);
         WebDriver driver = new FirefoxDriver(options);
         driver.get("https://medium.com/illumination/sonar-for-soil-how-we-can-use-sound-to-save-our-farms-and-forests-8521ebf86bb8");
