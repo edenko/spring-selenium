@@ -19,6 +19,7 @@ public class index {
 //        String geckoDriverPath = "/Users/commoncoding/Downloads/firfox-driver/geckodriver";
 
         FirefoxOptions options = new FirefoxOptions();
+        options.setBinary("/usr/bin/firefox");
         options.addArguments("--headless");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
