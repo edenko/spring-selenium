@@ -15,7 +15,7 @@ public class index {
 
     @GetMapping("/test/rss/medium")
     public void getDataMedium() {
-        String geckoDriverPath = "/home/ubuntu/spring-selenium/src/main/java/com/example/medium/Controller/geckodriver";
+        String geckoDriverPath = "/home/ubuntu/test/geckodriver";
 //        String geckoDriverPath = "/Users/commoncoding/Downloads/firfox-driver/geckodriver";
 
         FirefoxOptions options = new FirefoxOptions();
